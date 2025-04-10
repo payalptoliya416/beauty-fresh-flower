@@ -259,6 +259,9 @@ p {
     height: 0;
     z-index: 999;
   }
+  .navbar{
+    padding-top:15px;
+}
   #navbar .navbar-collapse.show {
     height: 100vh;
   }
