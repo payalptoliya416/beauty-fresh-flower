@@ -744,7 +744,13 @@ p {
   color: var(--gray-light-color);
   background-color: #f6f6f6;
   margin-right: 0;
+  transition: all 0.3s ease;
 }
+.catalog-tabs .nav-pills .nav-link:hover {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+    transform: scale(1.05); 
+  }
 .catalog-tabs .nav-pills {
   flex-wrap: nowrap;
   overflow-x: auto;
