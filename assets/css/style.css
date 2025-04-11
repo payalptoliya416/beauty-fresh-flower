@@ -135,7 +135,6 @@ p {
 /* ---hero sec-start-- */
 .hero-sec {
   padding-top: 30px;
-  /* padding-bottom: 65px; */
 }
 .hero-info h1 {
   font-size: 56px;
@@ -220,9 +219,9 @@ p {
 
 .hero-right img {
   position: relative;
-  right: -15%; /* Adjust as needed */
+  right: -15%; 
   max-width: none;
-  width: 120%; /* Allow it to go beyond container */
+  width: 120%; 
 }
 
 /* --responsive-- */
