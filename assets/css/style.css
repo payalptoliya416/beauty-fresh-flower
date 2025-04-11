@@ -147,15 +147,6 @@ p {
 .hero-info span {
   color: var(--pink-color);
 }
-.hero-right{
-    position: relative;
-}
-.hero-right img {
-  width: 100%;
-  /* position: absolute;
-  right: -30%;
-  top: 0; */
-}
 
 .hero-info p {
   font-size: 20px;
@@ -213,8 +204,33 @@ p {
   top: var(--hover-y, 50%);
   left: var(--hover-x, 50%);
 }
+.hero-sec {
+  position: relative;
+  overflow: visible;
+}
+
+.hero-right {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.hero-right img {
+  position: relative;
+  right: -15%; /* Adjust as needed */
+  max-width: none;
+  width: 120%; /* Allow it to go beyond container */
+}
 
 /* --responsive-- */
+@media(max-width:1440px){
+  .hero-right img {
+    right: -7%;
+  } 
+}
 @media (max-width: 1399px) {
   .hero-info h1 {
     font-size: 44px;
@@ -223,8 +239,14 @@ p {
   #navbar .navbar-nav {
     gap: 34px;
   }
+ 
 }
 
+@media (max-width: 1199px) {
+  .hero-right img {
+   max-width: max-content;
+  } 
+}
 @media (max-width: 991px) {
   .hero-info p {
     font-size: 18px;
@@ -308,6 +330,11 @@ p {
   .hero-info .btn {
     margin-bottom: 30px;
   }
+  .hero-right img{
+    position: static;
+    max-width: -webkit-fill-available;
+    width: 100%;
+  }
 }
 @media (max-width: 640px) {
   .hero-info .btn {
@@ -322,6 +349,7 @@ p {
   margin-top: -70px;
   z-index: 2;
   position: relative;
+
 }
 .count-sec-info {
   background-color: var(--white-color);
@@ -384,7 +412,7 @@ p {
 
 @media (max-width: 575px) {
   .count-sec {
-    margin-top: -10px;
+    margin: -10px 12px 0;
   }
 }
 @media (max-width: 430px) {
@@ -607,6 +635,18 @@ p {
 .selling-data:hover h3 {
   transform: translateY(-3px);
   opacity: 1;
+}
+/* ---responsive-- */
+@media(max-width:640px){
+  .selling-info{
+    max-width: 237px;
+  }
+  .selling-data{
+    padding: 26px 30px  36px;
+  }
+  .selling-data img{
+    margin-bottom: 2px;
+  }
 }
 /* --selling-items--end */
 
