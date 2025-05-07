@@ -47,6 +47,7 @@ p {
 }
 body{
   background-color: #FDFCF8;
+  scroll-behavior: smooth;
 }
 /* ---navbar--start */
 #navbar {
@@ -1256,7 +1257,6 @@ textarea:focus,
 }
 .contact-data a:hover {
   color: var(--gray-dark-color);
-  text-decoration: underline;
 }
 .contact-icon {
   width: 56px;
