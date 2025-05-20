@@ -738,7 +738,7 @@ body {
 }
 @media (max-width: 991px) {
   .process {
-    padding-top: 70px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 640px) {
@@ -850,6 +850,9 @@ body {
   .catalog-grid-main {
     grid-template-columns: 1fr;
   }
+  .catalog-sec {
+  padding-top: 50px;
+}
 }
 @media (max-width: 640px) {
   .catalog-grid {
@@ -889,6 +892,9 @@ body {
   .gallery-imgs img {
     padding-bottom: 30px;
   }
+  .gallery-info .gallery-imgs:first-child {
+  margin-bottom: 0px;
+}
 }
 
 /* --gallery-sec-end */
@@ -966,6 +972,9 @@ body {
   .testimonial-info p {
     font-size: 16px;
     line-height: 26px;
+  }
+    .testimonial-sec {
+    padding-top: 50px;
   }
 }
 /* --testimonial-sec-end */
