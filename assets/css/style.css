@@ -909,9 +909,17 @@ body {
   padding: 0 30px;
   margin-bottom: 50px;
 }
-.testimonial-info .inverted {
+.testimonial-icon{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(54, 88, 113, 0.1);
   margin: 0 auto 20px;
 }
+
 .testimonial-info p {
   font-size: 18px;
   line-height: 28px;
