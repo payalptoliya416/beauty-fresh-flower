@@ -814,16 +814,14 @@ body {
   margin-bottom: 15px;
   text-align: center;
 }
-.catalog-data button {
+.catalog-data h4 {
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
-  color: #21201c;
-  background-color: #fff;
-  padding: 14px 30px;
+  color: white;
+  padding: 1px 30px;
   border-radius: 800px;
   margin-bottom: 20px;
-  border: none;
   white-space: nowrap;
 }
 
