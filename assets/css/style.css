@@ -811,13 +811,13 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .catalog-data h4 {
   font-size: 14px;
   line-height: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   padding: 1px 30px;
   border-radius: 800px;
@@ -834,7 +834,6 @@ body {
   .catalog-data h3 {
     font-size: 14px;
     line-height: 16px;
-    margin-bottom: 12px;
   }
   .mb-31 {
     margin-bottom: 20px;
