@@ -1421,30 +1421,65 @@ footer {
 .contact-us-data {
 padding: 60px 0 90px;
 }
+.after-line{
+  position: relative;
+}
+.after-line::after{
+  position: absolute;
+  content: '';
+  background-color: var(--pink-color);
+  opacity: 0.4;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 20px;
+}
 .help-info {
   text-align: center;
+  transition: all 0.5s;
+}
+
+.help-info .process-icon{
+  margin: 20px auto;
+  transition: all 0.5s;
+  width: 80px;
+  height: 80px;
+}
+
+.help-info:hover .process-icon {
+  transform: rotateY(180deg) scale(1.1);
 }
 .help-info h3 {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 500;
   color: var(--gray-dark-color);
   margin-bottom: 20px;
   text-transform: uppercase;
 }
+
 .help-info p {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   color: var(--gray-light-color);
+  transition: all 0.5s;
+}
+.help-info p:hover{
+ color: var(--pink-color);
+  cursor: pointer;
+}
+
+.help-info p a:hover {
+  color: var(--pink-color);
 }
 .help-info p a {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
   color: #000;
   text-decoration: underline;
+   cursor: pointer;
 }
+
 @media (max-width: 1024px) {
   .contact-map iframe {
     width: 90%;
@@ -1465,7 +1500,7 @@ padding: 60px 0 90px;
 
 /* --contact-page-form--start */
 .contact-page-form {
-  background-image: url("../images/contactbg.jpg");
+  background-image: url("../images/contactbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1476,19 +1511,14 @@ padding: 60px 0 90px;
   text-align: center;
   margin-bottom: 40px;
 }
-.form-title h2 {
-  font-size: 34px;
-  line-height: 40px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
 .form-title p {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
+  margin-top: -10px;
 }
 .form-info .form-label {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   margin-bottom: 20px;
