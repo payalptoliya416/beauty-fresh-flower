@@ -27,8 +27,6 @@ $('.testimonial-carousel').owlCarousel({
     margin: 63,
     nav: false,
     dots: true,
-    // autoplay: true,              
-    // autoplayTimeout: 2000, 
     autoplayHoverPause: true, 
     responsive: {
         0: {
