@@ -1381,7 +1381,7 @@ footer {
 }
 .faq-data p {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   font-weight: 400;
   color: var(--gray-light-color);
 }
@@ -1549,7 +1549,7 @@ padding: 60px 0 90px;
 /* --contact-page-form--end */
 /* ---about-page-sec--start */
 .about-page-sec {
-  padding: 180px 0 130px;
+  padding: 150px 0 130px;
 }
 .about-page-title h2 {
   font-size: 50px;
@@ -1574,7 +1574,7 @@ padding: 60px 0 90px;
   position: absolute;
   right: -5%;
   z-index: -1;
-  top: -36%;
+  top: -29%;
   width: 72%;
 }
 @media (max-width: 1199px) {
@@ -1699,7 +1699,7 @@ padding: 60px 0 90px;
 .term-data h3 {
       font-size: 18px;
     line-height: 20px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--pink-color);
   margin-bottom: 10px;
   padding-top: 10px;
@@ -1756,7 +1756,7 @@ padding: 60px 0 90px;
 .license-info h3 {
    font-size: 18px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 .license-info p {
