@@ -53,7 +53,7 @@ body {
 #navbar {
   position: relative;
 }
-.main-navbar{
+.main-navbar {
   background-image: url("../images/navbar-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1414,19 +1414,12 @@ footer {
   margin-bottom: 40px;
 }
 .contact-map iframe {
-  width: 75%;
+  width: 100%;
   height: 470px;
   border: 0;
 }
 .contact-us-data {
-  margin-bottom: 70px;
-}
-.contact-data-title h2 {
-  font-size: 32px;
-  line-height: 36px;
-  text-align: center;
-  color: var(--gray-dark-color);
-  margin-bottom: 30px;
+padding: 60px 0 90px;
 }
 .help-info {
   text-align: center;
@@ -1466,87 +1459,67 @@ footer {
   .contactus-sec {
     padding-top: 32px;
   }
-  .contact-data-title h2 {
-    font-size: 28px;
-    line-height: 32px;
-  }
+
 }
 /* --contact us end */
 
 /* --contact-page-form--start */
-.contact-page-form{
-  background-image: url('../images/contactbg.jpg');
+.contact-page-form {
+  background-image: url("../images/contactbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
   padding: 70px 0;
 }
-.form-title{
+.form-title {
   text-align: center;
   margin-bottom: 40px;
 }
-.form-title h2{
+.form-title h2 {
   font-size: 34px;
   line-height: 40px;
   font-weight: 400;
   margin-bottom: 20px;
 }
-.form-title p{
+.form-title p {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
 }
-.form-info {
-  width: 100%;
-  max-width: 878px;
-  margin: auto;
-}
-.form-info .form-label{
+.form-info .form-label {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   margin-bottom: 20px;
 }
-.form-info .form-control{
+.form-info .form-control {
   border: 1px solid #000;
   border-radius: 0;
   padding: 12px;
 }
-.contact-btn{
-text-align: center;
-}
-.contact-btn .btn{
-  background-color: #000;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 0;
-  letter-spacing: 1px;
-  padding: 8px 50px;
-}
-@media(max-width:640px){
-  .form-title h2{
-  font-size: 28px;
-  line-height: 32px;
+@media (max-width: 640px) {
+  .form-title h2 {
+    font-size: 28px;
+    line-height: 32px;
   }
-  .form-info .form-control{
+  .form-info .form-control {
     padding: 10px;
   }
-  .form-info .form-label{
+  .form-info .form-label {
     margin-bottom: 14px;
   }
 }
-@media(max-width:375px){
-  .form-title h2{
-  font-size: 24px;
-  line-height: 28px;
+@media (max-width: 375px) {
+  .form-title h2 {
+    font-size: 24px;
+    line-height: 28px;
   }
-  
 }
 /* --contact-page-form--end */
 /* ---about-page-sec--start */
 .about-page-sec {
-  padding: 180px 0 150px;
+  padding: 180px 0 130px;
 }
 .about-page-title h2 {
   font-size: 50px;
@@ -1559,6 +1532,13 @@ text-align: center;
 }
 .about-page-title h2 span {
   color: var(--pink-color);
+}
+.about-page-title p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--gray-dark-color);
+  margin-bottom: 30px;
 }
 .about-page-right img {
   position: absolute;
@@ -1577,8 +1557,8 @@ text-align: center;
   }
 }
 @media (max-width: 1024px) {
-  .about-page-right img{
-            right: -4%;
+  .about-page-right img {
+    right: -4%;
   }
 }
 @media (max-width: 991px) {
@@ -1591,7 +1571,6 @@ text-align: center;
   .about-page-sec {
     padding: 50px 0;
   }
- 
 }
 
 /* ---about-page-sec--end */
@@ -1600,13 +1579,6 @@ text-align: center;
 .about-team {
   padding: 50px 0;
   background-color: #f6f6f6;
-}
-.about-team-title h2 {
-  font-size: 30px;
-  line-height: 34px;
-  font-weight: 500;
-  color: var(--gray-dark-color);
-  margin-bottom: 30px;
 }
 
 .about-team-info p {
@@ -1620,28 +1592,28 @@ text-align: center;
   margin-top: 60px;
   width: 100%;
 }
-@media(max-width:991px){
-   .about-page-title h2 {
+@media (max-width: 991px) {
+  .about-page-title h2 {
     font-size: 40px;
     line-height: 50px;
   }
 }
-@media(max-width:768px){
- .about-team-info p{
+@media (max-width: 768px) {
+  .about-team-info p {
     font-size: 16px;
     line-height: 24px;
   }
 }
-@media(max-width:640px){
+@media (max-width: 640px) {
   .about-page-title h2 {
     font-size: 30px;
     line-height: 44px;
   }
 }
-@media(max-width:375px){
-  .about-page-title h2{
-            font-size: 26px;
-        line-height: 36px;
+@media (max-width: 375px) {
+  .about-page-title h2 {
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 /* --about-team---end */
@@ -1660,18 +1632,18 @@ text-align: center;
   color: var(--gray-dark-color);
   margin-bottom: 20px;
 }
-@media(max-width:768px){
-   .team-bottom{
+@media (max-width: 768px) {
+  .team-bottom {
     padding-top: 20px;
   }
-  .team-bottom p{
+  .team-bottom p {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 0;
   }
 }
-@media(max-width:640px){
-  .team-bottom{
+@media (max-width: 640px) {
+  .team-bottom {
     padding-bottom: 0;
   }
 }
@@ -1679,21 +1651,10 @@ text-align: center;
 
 /* ---term-sec--start */
 .term-sec {
-  padding-top: 100px;
+  padding-top: 70px;
 }
-.term-sec-info {
-  max-width: 876px;
-  margin: auto;
-}
-.term-sec-info h1 {
-  font-size: 36px;
-  line-height: 42px;
-  font-weight: 700;
-  color: var(--gray-dark-color);
-  margin-bottom: 40px;
-}
-.term-sec-info h1 span {
-  color: var(--pink-color);
+.term-sec-info{
+  padding-top: 30px;
 }
 .term-data {
   margin-bottom: 40px;
@@ -1706,16 +1667,18 @@ text-align: center;
   margin-bottom: 10px;
 }
 .term-data h3 {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
+      font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--pink-color);
   margin-bottom: 10px;
   padding-top: 10px;
 }
 .term-data p {
-  font-size: 14px;
-  line-height: 24px;
+   font-size: 18px;
+  line-height: 28px;
   font-weight: 400;
+  color: var(--gray-light-color);
   margin-bottom: 22px;
 }
 .term-data p a {
@@ -1760,21 +1723,17 @@ text-align: center;
 .license-sec {
   padding-top: 70px;
 }
-.license-info {
-  max-width: 876px;
-  margin: auto;
-}
 .license-info h3 {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 600;
-  color: #000;
+   font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
   margin-bottom: 30px;
 }
 .license-info p {
-  font-size: 14px;
-  line-height: 24px;
+   font-size: 18px;
+  line-height: 28px;
   font-weight: 400;
+  color: var(--gray-light-color);
   margin-bottom: 30px;
 }
 @media (max-width: 991px) {
@@ -1788,23 +1747,20 @@ text-align: center;
 .security-sec {
   padding-top: 70px;
 }
-.tesecurity-sec-info {
-  max-width: 876px;
-  margin: auto;
-}
 .security-data {
   margin-bottom: 50px;
 }
 .security-data h2 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 .security-data p {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
+     font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--gray-light-color);
   margin-bottom: 30px;
 }
 @media (max-width: 640px) {
