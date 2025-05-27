@@ -1499,6 +1499,9 @@ padding: 60px 0 90px;
   .contactus-sec {
     padding-top: 32px;
   }
+   .after-none.after-line:after{
+    background-color: transparent;
+  }
 
 }
 /* --contact us end */
