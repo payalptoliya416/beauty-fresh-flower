@@ -1485,6 +1485,11 @@ padding: 60px 0 90px;
     width: 90%;
   }
 }
+@media (max-width: 991px) {
+  .after-none.after-line:after{
+    background-color: transparent;
+  }
+}
 @media (max-width: 767px) {
   .contact-map iframe {
     width: 95%;
