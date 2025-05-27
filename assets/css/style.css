@@ -1738,6 +1738,12 @@ padding: 60px 0 90px;
     padding-top: 40px;
   }
 }
+@media (max-width: 640px) {
+  .term-data p{
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 @media (max-width: 575px) {
   .term-sec-info h1 {
     font-size: 32px;
@@ -1779,6 +1785,12 @@ padding: 60px 0 90px;
     padding-top: 40px;
   }
 }
+@media (max-width: 640px) {
+.license-info p{
+  font-size: 16px;
+  line-height: 26px;
+}
+}
 /* ---license-sec---end*/
 
 /* --security-sec--start */
@@ -1808,6 +1820,10 @@ padding: 60px 0 90px;
   }
   .security-data {
     margin-bottom: 40px;
+  }
+  .security-data p{
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 /* --security-sec--end */
