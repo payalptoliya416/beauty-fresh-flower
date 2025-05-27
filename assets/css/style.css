@@ -1499,6 +1499,11 @@ footer {
     padding: 100px 0 100px;
   }
 }
+@media (max-width: 1024px) {
+  .about-page-right img{
+            right: -4%;
+  }
+}
 @media (max-width: 991px) {
   .about-page-right img {
     position: static;
@@ -1566,7 +1571,7 @@ footer {
 
 /* ---team-bottom--start */
 .team-bottom {
-  padding: 40px 0;
+  padding-top: 40px;
 }
 .team-bottom p a {
   color: #6784df;
@@ -1580,7 +1585,7 @@ footer {
 }
 @media(max-width:768px){
    .team-bottom{
-    padding: 20px 0;
+    padding-top: 20px;
   }
   .team-bottom p{
     font-size: 16px;
