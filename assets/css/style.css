@@ -1405,11 +1405,6 @@ textarea:focus,
 
 /* --contact-page-form--start */
 .contact-page-form {
-  background-image: url("../images/contactbg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
   padding: 70px 0;
 }
 .form-title {
@@ -1422,27 +1417,18 @@ textarea:focus,
   font-weight: 400;
   margin-top: -10px;
 }
-.form-info .form-label {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
 .form-info .form-control {
-  border: 1px solid #000;
-  border-radius: 0;
   padding: 12px;
+}
+@media (max-width: 991px) {
+  .contact-page-form{
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 640px) {
   .form-title h2 {
     font-size: 28px;
     line-height: 32px;
-  }
-  .form-info .form-control {
-    padding: 10px;
-  }
-  .form-info .form-label {
-    margin-bottom: 14px;
   }
 }
 @media (max-width: 375px) {
@@ -1477,10 +1463,18 @@ textarea:focus,
 }
 .about-page-right img {
   position: absolute;
-  right: -5%;
+  right: -6%;
   z-index: -1;
   top: -29%;
   width: 72%;
+}
+@media (max-width: 1399px) {
+  .about-page-sec{
+    padding-bottom: 0;
+  }
+  .about-page-title p{
+    margin-bottom: 70px;
+  }
 }
 @media (max-width: 1199px) {
   .about-page-right img {
@@ -1488,7 +1482,7 @@ textarea:focus,
     top: 0;
   }
   .about-page-sec {
-    padding: 100px 0 100px;
+    padding: 100px 0 0px;
   }
 }
 @media (max-width: 1024px) {
@@ -1502,9 +1496,11 @@ textarea:focus,
     width: 100%;
     margin-top: 30px;
   }
-
+ .about-page-title p{
+    margin-bottom: 40px;
+  }
   .about-page-sec {
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 }
 
@@ -1728,6 +1724,10 @@ textarea:focus,
 /* ---feature-hero--start */
 .feature-nav {
   background-color: rgba(54, 88, 113, 8%);
+}
+.feature-r-img {
+  width: 100%;
+  max-width: 420px;
 }
 .feature-hero {
   padding: 72px 0 79px;
@@ -2114,12 +2114,6 @@ textarea:focus,
   display: flex;
   gap: 18px;
   margin-top: 15px;
-}
-.footer-section .footer-social img{
-  transition: all 0.5s;
-}
-.footer-section .footer-social img:hover{
-  transform: rotateY(180deg);
 }
 .footer-section .footer-link h4{
  color: #ffffff;
