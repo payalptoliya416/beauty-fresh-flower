@@ -1886,6 +1886,9 @@ textarea:focus,
   .feature-key-info {
     margin: 0 auto 30px;
   }
+  .feature-key {
+    padding: 50px 0;
+  }
   .feature-key-info p {
     font-size: 16px;
     line-height: 20px;
@@ -1999,6 +2002,9 @@ textarea:focus,
   .interface-right-info::after {
     display: none;
   }
+  .interface-sec{
+    padding: 50px 0 0; 
+  }
 }
 @media(max-width:575px){
   .interface-left-info{
@@ -2073,7 +2079,7 @@ textarea:focus,
     font-size: 14px;
 }
   .how-work-section .how-title {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .how-work-section .icon-box {
@@ -2244,6 +2250,9 @@ textarea:focus,
   }
 }
 /* gift addon section section */
+.gift-addon-section{
+  padding: 120px 0;
+}
 .gift-addon-section .section-title {
   font-size: 42px;
   font-weight: 500;
@@ -2283,5 +2292,8 @@ textarea:focus,
   }
   .gift-addon-section .addon-heading {
     font-size: 18px;
+}
+.gift-addon-section{
+  padding: 50px 0 0;
 }
 }
