@@ -57,7 +57,6 @@ p {
   background-position: center;
   width: 100%;
   height: 100%;
-  padding-top: 30px;
 }
 .navbar {
   padding-top: 20px;
@@ -1255,104 +1254,6 @@ textarea:focus,
 }
 /* ---contact-us-- end */
 
-/* --footer--start */
-footer {
-  margin-top: 70px;
-  background-color: var(--gray-dark-color);
-  padding-top: 50px;
-  text-align: center;
-}
-.footer-logo {
-  margin-bottom: 30px;
-}
-.footer-logo img {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 124px;
-}
-.footer-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 45px;
-}
-.footer-nav .nav-link {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 600;
-  color: var(--white-color);
-  position: relative;
-  transition: all 0.5s;
-}
-.footer-nav .nav-link.active {
-  color: #9ec3d6;
-}
-.copy-right {
-  border-top: 1px solid rgb(246, 246, 246, 20%);
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.copy-right h3 {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #f6f6f6;
-  margin-bottom: 0;
-  transition: all 0.5s;
-}
-.copy-right h3:hover {
-  color: #9ec3d6;
-  cursor: pointer;
-}
-.social-icon {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-.social-icon li a {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: rgba(246, 246, 246, 10%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.social-icon li a:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* --responsive-- */
-@media (max-width: 1024px) {
-  footer {
-    margin-top: 80px;
-  }
-}
-@media (max-width: 991px) {
-  footer {
-    margin-top: 70px;
-  }
-}
-@media (max-width: 767px) {
-  .footer-nav {
-    flex-direction: column;
-  }
-}
-@media (max-width: 430px) {
-  .copy-right {
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-  }
-}
-/* --footer--end */
-
 /* --faq-sec start */
 .faq-sec {
   padding-top: 70px;
@@ -2186,9 +2087,11 @@ footer {
 /* Footer section */
 .footer-section{
   padding-bottom: 25px;
+   background-color: var(--gray-dark-color);
+   margin-top: 70px;
 }
 .footer-section .footer-inner-section{
-  padding: 45px 0px 0;
+  padding: 45px 20px 0;
 }
 .footer-section .logo-col p{
   color: #ffffff;
@@ -2296,7 +2199,9 @@ footer {
   color: #fff;
 }
 .footer-section .footer-link{
-  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 1080px) {
   .footer-section .footer-link {
@@ -2321,7 +2226,23 @@ footer {
     margin-bottom: 30px;
   }
 }
-
+@media(max-width:991px){
+  .footer-section .logo-col p{
+    max-width: 100%;
+  }
+  .footer-section .footer-link{
+    align-items: start;
+  }
+}
+@media(max-width:575px){
+  .footer-section .logo-col p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .footer-section .footer-link h4{
+        font-size: 24px;
+  }
+}
 /* gift addon section section */
 .gift-addon-section .section-title {
   font-size: 42px;
