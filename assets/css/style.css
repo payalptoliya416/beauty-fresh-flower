@@ -158,8 +158,7 @@ p {
   color: var(--gray-dark-color);
   margin-bottom: 30px;
 }
-.hero-info .btn,
-.about-btn {
+.hero-info .btn{
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
@@ -173,8 +172,7 @@ p {
   margin-bottom: 135px;
 }
 .hero-info .btn,
-.submit-btn .btn,
-.about-btn {
+.submit-btn .btn {
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -182,8 +180,7 @@ p {
 }
 
 .hero-info .btn::before,
-.submit-btn .btn::before,
-.about-btn::before {
+.submit-btn .btn::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -199,19 +196,16 @@ p {
 }
 
 .hero-info .btn:hover::before,
-.submit-btn .btn:hover::before,
-.about-btn.btn:hover::before {
+.submit-btn .btn:hover::before{
   transform: translate(-50%, -50%) scale(2);
 }
 
 .hero-info .btn:hover,
-.submit-btn .btn:hover,
-.about-btn:hover {
+.submit-btn .btn:hover {
   color: var(--pink-color);
 }
 .hero-info .btn::before,
-.submit-btn .btn::before,
-.about-btn::before {
+.submit-btn .btn::before {
   top: var(--hover-y, 50%);
   left: var(--hover-x, 50%);
 }
@@ -349,8 +343,7 @@ p {
   }
 }
 @media (max-width: 640px) {
-  .hero-info .btn,
-  .about-btn {
+  .hero-info .btn {
     padding: 14px 28px;
   }
 }
@@ -1450,6 +1443,7 @@ textarea:focus,
   }
 }
 /* --contact-page-form--end */
+
 /* ---about-page-sec--start */
 .about-page-sec {
   padding: 13px 0 57px;
