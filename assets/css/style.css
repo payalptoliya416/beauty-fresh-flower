@@ -1156,7 +1156,7 @@ textarea:focus,
 .contact-data a,
 .contact-data {
   font-size: 18px;
-  line-height: 18px;
+  line-height: 26px;
   font-weight: 400;
   color: var(--gray-light-color);
   margin-bottom: 0;
@@ -1211,6 +1211,7 @@ textarea:focus,
   .contact-data a,
   .contact-data {
     font-size: 14px;
+    line-height: 22px;
   }
   .contact-main {
     padding: 24px 20px;
@@ -1255,6 +1256,11 @@ textarea:focus,
   .contact-icon {
     width: 46px;
     height: 46px;
+  }
+}
+@media(max-width:330px){
+   .contact-main {
+    padding: 24px 14px;
   }
 }
 /* ---contact-us-- end */
@@ -2172,7 +2178,7 @@ textarea:focus,
 }
 /* gift addon section section */
 .gift-addon-section {
-  padding-top: 120px;
+  /* padding-top: 120px; */
 }
 .gift-addon-section .section-title {
   font-size: 42px;
@@ -2214,7 +2220,7 @@ textarea:focus,
     font-size: 18px;
   }
   .gift-addon-section {
-    padding: 50px 0 0;
+    /* padding: 50px 0 0; */
   }
 }
 
