@@ -2136,6 +2136,27 @@ textarea:focus,
   flex-direction: column;
   align-items: center;
 }
+.footer-location{
+  gap: 14px;
+  display: flex;
+  align-items: start;
+  margin-top: 28px;
+}
+.footer-location .loc-icon{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(246, 246, 246, 8%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer-location p{
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 24px;
+}
 @media (max-width: 1080px) {
   .footer-section .footer-link {
     padding-left: 0px;
@@ -2175,6 +2196,14 @@ textarea:focus,
   .footer-section .footer-link h4 {
     font-size: 24px;
   }
+}
+.footer-location p{
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer-location .loc-icon{
+  width: 40px;
+  height: 40px;
 }
 /* gift addon section section */
 .gift-addon-section {

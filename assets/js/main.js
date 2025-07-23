@@ -40,6 +40,24 @@ $('.testimonial-carousel').owlCarousel({
         }
     }
 });
+$('.hero-carousel').owlCarousel({
+    loop: false,
+    margin: 63,
+    nav: false,
+    dots: true,
+    autoplayHoverPause: true, 
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+});
 
 $('.selling-carousel').owlCarousel({
     loop: false,
@@ -115,3 +133,7 @@ AOS.init({
     anchorPlacement: 'top-bottom', 
   
   });
+
+
+  // ---email subscription
+  
