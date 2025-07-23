@@ -2206,9 +2206,7 @@ textarea:focus,
   height: 40px;
 }
 /* gift addon section section */
-.gift-addon-section {
-  /* padding-top: 120px; */
-}
+
 .gift-addon-section .section-title {
   font-size: 42px;
   font-weight: 500;
@@ -2248,9 +2246,7 @@ textarea:focus,
   .gift-addon-section .addon-heading {
     font-size: 18px;
   }
-  .gift-addon-section {
-    /* padding: 50px 0 0; */
-  }
+
 }
 
 /* --platform-info-start */
