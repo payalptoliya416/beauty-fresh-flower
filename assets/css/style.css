@@ -226,8 +226,8 @@ p {
 .hero-right img {
   position: relative;
   right: -15%;
-  max-width: none;
-  width: 120%;
+  /* max-width: none; */
+  /* width: 120%; */
 }
 
 /* --responsive-- */
@@ -248,7 +248,7 @@ p {
 
 @media (max-width: 1199px) {
   .hero-right img {
-    max-width: max-content;
+    /* max-width: max-content; */
   }
 }
 @media (max-width: 991px) {
@@ -338,8 +338,8 @@ p {
   }
   .hero-right img {
     position: static;
-    max-width: -webkit-fill-available;
-    width: 100%;
+    /* max-width: -webkit-fill-available;
+    width: 100%; */
   }
 }
 @media (max-width: 640px) {
