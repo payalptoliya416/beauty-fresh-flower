@@ -17,11 +17,9 @@ body,
 html {
   font-family: "Inter";
   overflow-x: hidden;
-  /* background-color: #fdfcf8; */
 }
 
 img {
-  /* display: block; */
   max-width: 100%;
 }
 
@@ -50,7 +48,7 @@ p {
 #navbar {
   position: relative;
 }
-.main-navbar {
+.navbar {
   background-image: url("../images/navbar-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,9 +135,7 @@ p {
 /* ---navbar--end */
 
 /* ---hero sec-start-- */
-.hero-sec {
-  padding-top: 30px;
-}
+
 .hero-info h1 {
   font-size: 56px;
   line-height: 80px;
@@ -158,7 +154,7 @@ p {
   color: var(--gray-dark-color);
   margin-bottom: 30px;
 }
-.hero-info .btn{
+.hero-info .btn {
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
@@ -196,7 +192,7 @@ p {
 }
 
 .hero-info .btn:hover::before,
-.submit-btn .btn:hover::before{
+.submit-btn .btn:hover::before {
   transform: translate(-50%, -50%) scale(2);
 }
 
@@ -213,27 +209,28 @@ p {
   position: relative;
   overflow: visible;
 }
-
-.hero-right {
-  position: relative;
+.hero-sec .item {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  overflow: visible;
+  padding: 100px 0 120px 0;
 }
-
-.hero-right img {
-  position: relative;
-  right: -15%;
-  /* max-width: none; */
-  /* width: 120%; */
+.hero-bg1 {
+  background-image: url("../images/herobg1.png");
 }
-
+.hero-bg2 {
+  background-image: url("../images/herobg2.png");
+}
+.hero-bg3 {
+  background-image: url("../images/herobg3.png");
+}
 /* --responsive-- */
+
 @media (max-width: 1440px) {
-  .hero-right img {
-    right: -7%;
+  .hero-info h1 {
+    font-size: 46px;
+    line-height: 66px;
   }
 }
 @media (max-width: 1399px) {
@@ -247,8 +244,17 @@ p {
 }
 
 @media (max-width: 1199px) {
-  .hero-right img {
-    /* max-width: max-content; */
+  .hero-sec .item {
+    padding: 70px 0 80px 0;
+  }
+  .hero-info h1 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-sec .item {
+    padding: 60px 0;
   }
 }
 @media (max-width: 991px) {
@@ -331,16 +337,35 @@ p {
     right: 20px;
     z-index: 1000;
   }
+  .hero-info .btn {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    padding: 15px 30px;
+  }
+  .hero-sec .item {
+    padding: 40px 0 60px 0;
+  }
 }
 @media (max-width: 767px) {
   .hero-info .btn {
     margin-bottom: 30px;
   }
-  .hero-right img {
-    position: static;
-    /* max-width: -webkit-fill-available;
-    width: 100%; */
+  .hero-sec .item{
+    padding-bottom: 0;
   }
+  .hero-bg1{
+  background-image: url('../images/navbar-bg.png');
+  }
+  .hero-bg2{
+  background-image: url('../images/navbar-bg.png');
+  }
+  .hero-bg3{
+  background-image: url('../images/navbar-bg.png');
+  }
+.hero-info{
+  text-align: center;
+}
 }
 @media (max-width: 640px) {
   .hero-info .btn {
@@ -1258,8 +1283,8 @@ textarea:focus,
     height: 46px;
   }
 }
-@media(max-width:330px){
-   .contact-main {
+@media (max-width: 330px) {
+  .contact-main {
     padding: 24px 14px;
   }
 }
@@ -2136,13 +2161,13 @@ textarea:focus,
   flex-direction: column;
   align-items: center;
 }
-.footer-location{
+.footer-location {
   gap: 14px;
   display: flex;
   align-items: start;
   margin-top: 28px;
 }
-.footer-location .loc-icon{
+.footer-location .loc-icon {
   width: 50px;
   height: 50px;
   background-color: rgba(246, 246, 246, 8%);
@@ -2150,9 +2175,8 @@ textarea:focus,
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.footer-location p{
+.footer-location p {
   color: var(--white-color);
   font-size: 16px;
   line-height: 24px;
@@ -2197,11 +2221,11 @@ textarea:focus,
     font-size: 24px;
   }
 }
-.footer-location p{
+.footer-location p {
   font-size: 14px;
   line-height: 20px;
 }
-.footer-location .loc-icon{
+.footer-location .loc-icon {
   width: 40px;
   height: 40px;
 }
@@ -2246,7 +2270,6 @@ textarea:focus,
   .gift-addon-section .addon-heading {
     font-size: 18px;
   }
-
 }
 
 /* --platform-info-start */
@@ -2316,7 +2339,7 @@ textarea:focus,
   transition: all 0.5s;
 }
 .promise-info:hover .promise-info-icon {
-  transform: scale(1.0.3) rotate(5deg);
+  transform: scale(1.3) rotate(5deg);
   box-shadow: 0 12px 24px rgba(54, 88, 113, 0.2);
 }
 
@@ -2395,16 +2418,21 @@ textarea:focus,
   position: relative;
   transition: all 0.5s;
 }
-.choose-info::after{
+.choose-info::after {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   right: -5%;
   width: 2px;
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2), transparent);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
 }
-.why-choose .col-lg-3:last-child .choose-info:after{
+.why-choose .col-lg-3:last-child .choose-info:after {
   display: none;
 }
 
@@ -2418,10 +2446,10 @@ textarea:focus,
   justify-content: center;
   margin-bottom: 25px;
 }
-.choose-icon img{
+.choose-icon img {
   transition: all 0.5s;
 }
-.choose-info:hover .choose-icon img{
+.choose-info:hover .choose-icon img {
   transform: rotateY(180deg);
 }
 .choose-info h3 {
@@ -2439,33 +2467,33 @@ textarea:focus,
   width: 100%;
   max-width: 280px;
 }
-@media(max-width:1199px){
-  .choose-info h3{
+@media (max-width: 1199px) {
+  .choose-info h3 {
     height: 36px;
   }
-  .choose-info::after{
+  .choose-info::after {
     right: -7%;
   }
 }
-@media(max-width:1024px){
-  .why-choose{
+@media (max-width: 1024px) {
+  .why-choose {
     padding-top: 70px;
   }
 }
-@media(max-width:991px){
- .why-choose .col-lg-3:nth-child(2) .choose-info:after{
-  display: none;
+@media (max-width: 991px) {
+  .why-choose .col-lg-3:nth-child(2) .choose-info:after {
+    display: none;
+  }
+  .choose-info h3 {
+    height: auto;
+  }
 }
-.choose-info h3{
-  height: auto;
-}
-}
-@media(max-width:575px){
- .why-choose .choose-info:after{
-  display: none;
-}
-.why-choose{
- padding-top: 50px;
-}
+@media (max-width: 575px) {
+  .why-choose .choose-info:after {
+    display: none;
+  }
+  .why-choose {
+    padding-top: 50px;
+  }
 }
 /* ---why choose sec end */
