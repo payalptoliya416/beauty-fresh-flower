@@ -49,11 +49,7 @@ p {
   position: relative;
 }
 .navbar {
-  /* background-image: url("../images/navbar-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-    background-color:rgba(54, 88, 113, 8%);
+  background-color: rgba(54, 88, 113, 8%);
   width: 100%;
   height: 100%;
 }
@@ -132,7 +128,11 @@ p {
 .footer-nav .nav-link.active {
   color: #9ec3d6;
 }
-
+@media (max-width: 575px) {
+  .navbar-brand img {
+    max-width: 94px;
+  }
+}
 /* ---navbar--end */
 
 /* ---hero sec-start-- */
@@ -215,7 +215,7 @@ p {
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
-  padding: 100px 0 120px 0;
+  padding: 115px 0 145px 0;
 }
 .hero-bg1 {
   background-image: url("../images/herobg1.png");
@@ -352,21 +352,21 @@ p {
   .hero-info .btn {
     margin-bottom: 30px;
   }
-  .hero-sec .item{
+  .hero-sec .item {
     padding-bottom: 0;
   }
-  .hero-bg1{
-  background-image: url('../images/navbar-bg.png');
+  .hero-bg1 {
+    background-image: url("../images/navbar-bg.png");
   }
-  .hero-bg2{
-  background-image: url('../images/navbar-bg.png');
+  .hero-bg2 {
+    background-image: url("../images/navbar-bg.png");
   }
-  .hero-bg3{
-  background-image: url('../images/navbar-bg.png');
+  .hero-bg3 {
+    background-image: url("../images/navbar-bg.png");
   }
-.hero-info{
-  text-align: center;
-}
+  .hero-info {
+    text-align: center;
+  }
 }
 @media (max-width: 640px) {
   .hero-info .btn {
@@ -1396,7 +1396,7 @@ textarea:focus,
 /* ---about-page-sec--start */
 .about-page-sec {
   padding: 13px 0 57px;
-  background-color:rgba(54, 88, 113, 8%);
+  background-color: rgba(54, 88, 113, 8%);
 }
 .about-page-title h2 {
   font-size: 46px;
