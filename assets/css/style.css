@@ -272,8 +272,8 @@ p {
 }
 @media (max-width: 991px) {
   .hero-info p {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .hero-info h1 {
     font-size: 30px;
