@@ -213,9 +213,10 @@ p {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  height: 100%;
+  height: 78vh;
   padding: 100px 0 120px 0;
 }
+
 .hero-bg1 {
   background-image: url("../images/herobg1.png");
 }
@@ -344,7 +345,7 @@ p {
     padding: 15px 30px;
   }
   .hero-sec .item {
-    padding: 40px 0 60px 0;
+    height: 60vh;
   }
 }
 @media (max-width: 767px) {
@@ -353,6 +354,7 @@ p {
   }
   .hero-sec .item{
     padding-bottom: 0;
+     height: 100%;
   }
   .hero-bg1{
   background-image: url('../images/navbar-bg.png');
