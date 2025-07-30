@@ -129,10 +129,7 @@ AOS.init({
     mirror: false, 
     anchorPlacement: 'top-bottom', 
   
-  });
-
-
-  // ---email subscription
+});
   
 //   --langugae change
 function loadGoogleTranslate() {
@@ -141,9 +138,9 @@ function loadGoogleTranslate() {
       includedLanguages: 'en,nl',
       layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
     }, 'google_element');
-  }
+}
 
-  function changeLanguage(lang) {
+function changeLanguage(lang) {
     const trySetLanguage = () => {
       const select = document.querySelector('.goog-te-combo');
       if (select) {
@@ -158,9 +155,9 @@ function loadGoogleTranslate() {
       }
     };
     trySetLanguage();
-  }
+}
 
-  document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const script = document.createElement('script');
     script.src = 'https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate';
     document.body.appendChild(script);
@@ -172,5 +169,5 @@ function loadGoogleTranslate() {
 
     // Change language after delay
     setTimeout(() => changeLanguage(savedLang), 1500);
-  });
+});
   
