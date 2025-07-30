@@ -18,8 +18,6 @@ count.forEach((item) => {
   }, 50);
 });
 
-
-
 // ---owl carousel -for Discover our best-selling item
 
 $('.testimonial-carousel').owlCarousel({
@@ -45,7 +43,7 @@ $('.hero-carousel').owlCarousel({
     margin: 63,
     nav: false,
     dots: true,
-    autoplayHoverPause: true, 
+    autoplayHoverPause: true,
     responsive: {
         0: {
             items: 1
@@ -58,7 +56,6 @@ $('.hero-carousel').owlCarousel({
         }
     }
 });
-
 $('.selling-carousel').owlCarousel({
     loop: false,
     margin: 20,
@@ -96,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
         bsCollapse.hide();
       }
     });
-  }); 
+}); 
 
 //   ---button animation
 const buttons = document.querySelectorAll('.hero-info .btn ,.submit-btn .btn');
