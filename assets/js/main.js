@@ -137,3 +137,43 @@ AOS.init({
 
   // ---email subscription
   
+//   --langugae change
+function loadGoogleTranslate() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,de',
+      layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+    }, 'google_element');
+  }
+
+  function changeLanguage(lang) {
+    const trySetLanguage = () => {
+      const select = document.querySelector('.goog-te-combo');
+      if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event('change'));
+        const langMap = { en: "EN", de: "DE" };
+        document.getElementById('selectedLang').innerText = langMap[lang] || "EN";
+
+        localStorage.setItem('selectedLang', lang);
+      } else {
+        setTimeout(trySetLanguage, 500);
+      }
+    };
+    trySetLanguage();
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate';
+    document.body.appendChild(script);
+
+    const savedLang = localStorage.getItem('selectedLang') || 'en';
+    // Set dropdown label on load
+    const langMap = { en: "EN", de: "DE"};
+    document.getElementById('selectedLang').innerText = langMap[savedLang] || "EN";
+
+    // Change language after delay
+    setTimeout(() => changeLanguage(savedLang), 1500);
+  });
+  
