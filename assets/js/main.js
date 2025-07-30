@@ -141,7 +141,7 @@ AOS.init({
 function loadGoogleTranslate() {
     new google.translate.TranslateElement({
       pageLanguage: 'en',
-      includedLanguages: 'en,de',
+      includedLanguages: 'en,nl',
       layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
     }, 'google_element');
   }
@@ -152,7 +152,7 @@ function loadGoogleTranslate() {
       if (select) {
         select.value = lang;
         select.dispatchEvent(new Event('change'));
-        const langMap = { en: "EN", de: "DE" };
+        const langMap = { en: "EN", nl: "NL" };
         document.getElementById('selectedLang').innerText = langMap[lang] || "EN";
 
         localStorage.setItem('selectedLang', lang);
@@ -170,7 +170,7 @@ function loadGoogleTranslate() {
 
     const savedLang = localStorage.getItem('selectedLang') || 'en';
     // Set dropdown label on load
-    const langMap = { en: "EN", de: "DE"};
+    const langMap = { en: "EN", nl: "NL"};
     document.getElementById('selectedLang').innerText = langMap[savedLang] || "EN";
 
     // Change language after delay
